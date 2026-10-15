@@ -36,15 +36,15 @@ public class MainClass {
 		
 		//3. 변수명은 데이터의 의미를 쉽게 파악할 수 있도록 작명한다.
 		int score = 80;          // 권장, int s = 80; (비권장)
-		string player = "홍길동"; // 권장, string p = "홍길동"; (비권장)
-		string map = "지도";     // 권장, string m = "지도"; (비권장)
+		//string player = "홍길동"; // 권장, string p = "홍길동"; (비권장)
+		//string map = "지도";     // 권장, string m = "지도"; (비권장)
 		
 		//4. 2개 이상의 단어가 조합된 경우 낙타표기법을 사용한다.
 		int myScore = 80;      // 나의 점수
 		int totalScore = 80;   // 전체 점수
 		int hightScore = 80;   // 최고 점수
 		int avarageScore = 80; // 평균 점수
-		string newItem = "칼";   // 새로운 아이템
+		//string newItem = "칼";   // 새로운 아이템
 		
 		//5. 키워드는 변수명으로 사용할 수 없다.
 		/*
@@ -64,7 +64,43 @@ public class MainClass {
 		int num1ber = 10;    //가능
 		int number1 = 10;    //가능
 		
+		//데이터 변경
+		int number = 10;
+		System.out.println("number:"+ number); // number:10
 		
+		number = 20;
+		System.out.println("number:"+ number); // number:20
+		/*
+		 * 동일한 이름으로 변수를 선언하면 안된다.
+		 */
 		
+		//int number = 30;
+		
+		// 데이터 복사
+		int num1 = 10;
+		System.out.println("num1:" + num1); // num1:10
+		
+		int num22 = num1;
+		System.out.println("num22:" + num22); // num22:10
+		
+		int n1 = 10;
+		int n2 = 20;
+		
+		// Q) n1과 n2 의 값을 교환 하시오.
+		int n0 = 0;
+		n0 = n1;
+		n1 = n2;
+		n2 = n0;
+		
+		System.out.println("n1:" + n1); //20
+		System.out.println("n2:" + n2); //10
+		
+		//Q) 가로와 세로 변수를 각각 만들고 방의 넓이를 구해보자.
+		int width;
+		int height;
+		
+		width = 100;
+		height = 50;
+		System.out.println("방의 넓이:" + (width * height));  //방의 넓이:5000
 	}
 }
